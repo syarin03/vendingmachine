@@ -18,28 +18,28 @@ public:
         strcpy(temper, drink_temper);
     }
 
-    void sellDrink(int num) {
-        stock -= num;
+    void sellDrink() {
+        stock -= 1;
     }
 
     void fillDrink(int num) {
         stock += num;
     }
 
-    char * showName() {
+    char * getName() {
         return name;
     }
 
-    int showPrice() {
+    int getPrice() {
         return price;
     }
 
-    char * showTemper()
+    char * getTemper()
     {
         return temper;
     }
 
-    char showStock()
+    char getStock()
     {
         if (stock <= 0)
             return 'X';
